@@ -15,7 +15,8 @@ python game_logic.py
 ```
 
 <p align="center">
-<img src="">
+<video src="https://user-images.githubusercontent.com/70837975/183437373-7c7a5233-bfab-4246-be4b-8f2469948562.mov" controls="controls" style="max-width: 730px;">
+</video>
 </p>
 
 ## Screenshots
