@@ -73,7 +73,7 @@ def playing(player_marks, current_turn):
             print(f'{current_turn} has won the game!!!')
             break
 
-        if not GameBoard.is_board_empty():
+        if GameBoard.is_board_full():
             print('TIE GAME!!!')
             break
 

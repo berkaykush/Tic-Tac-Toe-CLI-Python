@@ -40,8 +40,8 @@ class GameBoard:
         cls.__board[cell] = current_mark
 
     @classmethod
-    def is_board_empty(cls):
-        return ' ' in cls.__board.values()
+    def is_board_full(cls):
+        return not ' ' in cls.__board.values()
 
     @classmethod
     def clear_board(cls):
