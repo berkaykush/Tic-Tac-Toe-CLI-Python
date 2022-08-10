@@ -55,6 +55,10 @@ def swap_turns(current_turn):
     return 'Player 1'
 
 
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 def playing(player_marks, current_turn):
     while True:
         chosen_cell = check_user_input_cell(current_turn)
@@ -67,6 +71,7 @@ def playing(player_marks, current_turn):
                 'Sorry the cell is already taken. Please select another spot.\n')
             continue
 
+        clear_terminal()
         GameBoard.display_board()
 
         if is_win():
@@ -79,10 +84,6 @@ def playing(player_marks, current_turn):
             break
 
         current_turn = swap_turns(current_turn)
-
-
-def clear_terminal():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def main():
