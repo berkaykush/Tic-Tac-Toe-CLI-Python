@@ -1,5 +1,6 @@
 from random import randrange
 from time import sleep
+import os
 
 from player_input import check_the_mark_of_first_player
 from player_input import check_user_input_cell, check_user_continuation_response
@@ -80,6 +81,10 @@ def playing(player_marks, current_turn):
         current_turn = swap_turns(current_turn)
 
 
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 def main():
     while True:
         display_welcome_message()
@@ -90,11 +95,12 @@ def main():
 
         playing(player_marks, current_turn)
 
-        if check_user_continuation_response() == 'Y':
-            GameBoard.clear_board()
-        else:
+        if check_user_continuation_response() == 'N':
             print('\nGOODBYE!!!')
             break
+
+        GameBoard.clear_board()
+        clear_terminal()
 
 
 if __name__ == '__main__':
