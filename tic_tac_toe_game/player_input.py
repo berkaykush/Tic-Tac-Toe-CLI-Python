@@ -24,7 +24,7 @@ def check_user_input_cell(current_turn):
 
             print('Sorry you are out of acceptable range (1-9).\n')
         else:
-            print(f'Sorry \'{user_input}\' is not a valid command.\n')
+            print(f'Sorry \'{user_input}\' is not a digit.\n')
 
 
 def check_user_continuation_response():
