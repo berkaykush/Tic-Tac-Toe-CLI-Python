@@ -1,12 +1,9 @@
-from random import randrange
-from time import sleep
+import random
+import time
 import os
 
-from player_input import check_the_mark_of_first_player
-from player_input import check_user_input_cell, check_user_continuation_response
-
+import player_input
 from game_board import GameBoard
-
 from win_rules import is_win
 
 
@@ -34,13 +31,14 @@ def display_introduction_board():
                    |     |
                 7  |  8  |  9
                    |     |
+              _________________
             ''')
 
 
 def pick_the_starting_player():
-    sleep(0.5)
+    time.sleep(0.5)
 
-    if randrange(0, 2):
+    if random.randrange(0, 2):
         print('Player 1 will go first.')
         return 'Player 1'
 
@@ -61,7 +59,7 @@ def clear_terminal():
 
 def playing(player_marks, current_turn):
     while True:
-        chosen_cell = check_user_input_cell(current_turn)
+        chosen_cell = player_input.check_user_input_cell(current_turn)
 
         if not GameBoard.is_cell_taken(chosen_cell):
             GameBoard.update_board(
@@ -79,7 +77,7 @@ def playing(player_marks, current_turn):
             print(f'{current_turn} has won the game!!!')
             break
 
-        if GameBoard.is_board_full():
+        if not GameBoard.is_board_empty():
             print('TIE GAME!!!')
             break
 
@@ -89,14 +87,14 @@ def playing(player_marks, current_turn):
 def main():
     while True:
         display_welcome_message()
-        player_marks = check_the_mark_of_first_player()
+        player_marks = player_input.check_the_mark_of_first_player()
 
         current_turn = pick_the_starting_player()
         display_introduction_board()
 
         playing(player_marks, current_turn)
 
-        if check_user_continuation_response() == 'N':
+        if player_input.check_user_continuation_response() == 'N':
             print('\nGOODBYE!!!')
             break
 
