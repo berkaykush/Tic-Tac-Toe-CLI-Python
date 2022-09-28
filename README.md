@@ -15,14 +15,14 @@ python game_logic.py
 ```
 
 <p align="center">
-<video src="https://user-images.githubusercontent.com/70837975/183437373-7c7a5233-bfab-4246-be4b-8f2469948562.mov" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/70837975/192800038-cfe0714f-150d-450d-bf71-d6a881da0e8a.mov" controls="controls" style="max-width: 730px;">
 </video>
 </p>
 
 ## Screenshots
 <p align="center">
-<img width=400 height=300 src="/images/Screenshot-1.png">
-  <img width=400 height=300 src="/images/Screenshot-2.png">
+<img width=500 src="/resources/screenshot_1.png">
+  <img width=500 src="/resources/screenshot_2.png">
 </p>
 
 ## Author
