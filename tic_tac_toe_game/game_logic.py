@@ -1,6 +1,6 @@
+import os
 import random
 import time
-import os
 
 import player_input
 from game_board import GameBoard
@@ -31,7 +31,6 @@ def display_introduction_board():
                    |     |
                 7  |  8  |  9
                    |     |
-              _________________
             ''')
 
 
@@ -77,7 +76,7 @@ def playing(player_marks, current_turn):
             print(f'{current_turn} has won the game!!!')
             break
 
-        if not GameBoard.is_board_empty():
+        if GameBoard.is_board_full():
             print('TIE GAME!!!')
             break
 
@@ -103,4 +102,5 @@ def main():
 
 
 if __name__ == '__main__':
+    clear_terminal()
     main()
