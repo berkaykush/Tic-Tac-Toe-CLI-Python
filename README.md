@@ -15,7 +15,7 @@ python main.py
 ```
 
 <p align="center">
-<video src="https://user-images.githubusercontent.com/70837975/192800038-cfe0714f-150d-450d-bf71-d6a881da0e8a.mov" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/70837975/209135735-50e79d0e-6eb2-4237-9127-f61d8c453d60.mp4" controls="controls" style="max-width: 730px;">
 </video>
 </p>
 
