@@ -9,7 +9,7 @@ The command line interface Tic-Tac-Toe game in Python.
 ## Running Tic-Tac-Toe:
 
 ```
-git clone https://github.com/bk0511/Tic-Tac-Toe-CLI-Python.git
+git clone https://github.com/berkaykush/Tic-Tac-Toe-CLI-Python.git
 cd Tic-Tac-Toe-CLI-Python/code
 python main.py
 ```
