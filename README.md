@@ -13,16 +13,12 @@ git clone https://github.com/berkaykush/Tic-Tac-Toe-CLI-Python.git
 cd Tic-Tac-Toe-CLI-Python/code
 python main.py
 ```
-
-<p align="center">
-<video src="https://user-images.githubusercontent.com/70837975/209135735-50e79d0e-6eb2-4237-9127-f61d8c453d60.mp4" controls="controls" style="max-width: 730px;">
-</video>
-</p>
+https://user-images.githubusercontent.com/70837975/209135735-50e79d0e-6eb2-4237-9127-f61d8c453d60.mp4
 
 ## Screenshots
 <p align="center">
 <img width=500 src="/resources/screenshot_1.png">
-  <img width=500 src="/resources/screenshot_2.png">
+<img width=500 src="/resources/screenshot_2.png">
 </p>
 
 ## Author
