@@ -4,10 +4,9 @@
 ![](https://img.shields.io/badge/Python_Version-3.10.5-brown.svg)
 ![](https://img.shields.io/badge/Status-Complete-green.svg)
 
-The command line interface Tic-Tac-Toe game in Python.
+CLI Tic-Tac-Toe game in Python.
 
 ## Running Tic-Tac-Toe:
-
 ```
 git clone https://github.com/berkaykush/Tic-Tac-Toe-CLI-Python.git
 cd Tic-Tac-Toe-CLI-Python/code
